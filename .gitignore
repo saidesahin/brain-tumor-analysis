@@ -1,0 +1,42 @@
+
+# Raw and processed MRI data
+raw_data/
+processed/
+metadata.csv
+
+# Model checkpoints
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Generated outputs
+gradcam_outputs/
+test_results/
+
+# Allow the test results Excel file
+!test_results.xlsx
+
+# Excel temporary lock files
+~$*.xlsx
+
+# Exclude the U-Net script
+/tumor_grade_prediction/seg_unet.py
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+
